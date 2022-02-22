@@ -26,6 +26,10 @@ public class MyController {
             List<Currency> allCurrencies = currencyService.getAllCurrencies();
             return allCurrencies;
         }
+    @GetMapping("/currencies/{symbol}")
+    public double getCurrentPrice(@PathVariable String symbol) {
+        return currencyService.getCurrentPrice(symbol);
+    }
     @GetMapping("/user-registrations")
     public List<UserRegistration> showAllUserRegistrations() {
         List<UserRegistration> userRegistrations = userRegistrationService.getAllUserRegistrations();

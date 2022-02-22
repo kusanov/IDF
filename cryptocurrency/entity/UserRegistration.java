@@ -17,7 +17,7 @@ public class UserRegistration {
     @Column(name = "symbol")
     private String symbol;
     @Column(name = "registration_price")
-    private double registration_price;
+    private double registrationPrice;
 
     public String getUsername() {
         return username;
@@ -35,20 +35,20 @@ public class UserRegistration {
         this.symbol = symbol;
     }
 
-    public double getRegistration_price() {
-        return registration_price;
+    public double getRegistrationPrice() {
+        return registrationPrice;
     }
 
-    public void setRegistration_price(double pricecur) {
-        this.registration_price = pricecur;
+    public void setRegistrationPrice(double pricecur) {
+        this.registrationPrice = pricecur;
     }
 
     public UserRegistration() {
     }
 
-    public UserRegistration(String username, String symbol, double registration_price) {
+    public UserRegistration(String username, String symbol, double registrationPrice) {
         this.username = username;
         this.symbol = symbol;
-        this.registration_price = registration_price;
+        this.registrationPrice = registrationPrice;
     }
 }
